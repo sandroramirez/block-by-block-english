@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 2 · Lesson 1 · Block by Block English</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#ADE0FC;color:#1F2340}
+.sky{background:linear-gradient(#2F7FD8,#ADE0FC);padding:22px 16px 70px;text-align:center;color:#fff}
+.sky h1{margin:0;font-size:30px;letter-spacing:1px;text-shadow:3px 3px 0 #1F2340}.sky p{margin:6px 0 0;font-weight:600}
+.ground{height:26px;background:repeating-linear-gradient(90deg,#5BB33A 0 26px,#4FA232 26px 52px);border-top:3px solid #3E8A27}
+main{background:#8B5A2B;padding:16px 12px 40px;min-height:60vh}
+.wrap{max-width:640px;margin:0 auto}
+.card{background:#fff;border:3px solid #1F2340;border-radius:10px;padding:14px;margin:0 0 14px;box-shadow:4px 4px 0 #1F2340}
+.tag{display:inline-block;color:#fff;font-weight:800;border-radius:6px;padding:3px 10px;font-size:13px}
+.trk{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.num{background:#1F2340;color:#FFC93C;font-weight:800;border-radius:8px;padding:6px 10px;font-size:18px}
+.t{font-weight:800;font-size:17px}.s{color:#5b6088;font-size:14px}
+audio{width:100%;height:48px;margin-top:4px}
+.speed{margin-top:6px;display:flex;gap:6px}.speed button{flex:1;font-size:15px;font-weight:700;padding:8px;border:2px solid #1F2340;border-radius:8px;background:#FFF6DB}
+.speed button.on{background:#FFC93C}
+a.lesson{display:flex;align-items:center;gap:12px;text-decoration:none;color:#1F2340;padding:10px;border:2px solid #d8dbef;border-radius:8px;margin-top:8px;font-weight:700}
+a.lesson b{color:#fff;border-radius:6px;padding:4px 10px}
+.back{display:inline-block;margin-bottom:12px;color:#fff;font-weight:700}
+.tip{background:#FFF6DB;border:2px dashed #F2B600;border-radius:8px;padding:10px;font-size:14px}
+footer{color:#f3e2cf;font-size:12px;text-align:center;margin-top:20px}
+</style></head><body>
+<div class="sky"><h1>BLOCK BY BLOCK ENGLISH</h1><p>World 2 · Count the Blocks</p></div><div class="ground"></div>
+<main><div class="wrap"><a class="back" href="../">⬅ Todos los audios</a><div class="card"><span class="tag" style="background:#FF7A00">World 2 · Lesson 1</span><h2 style="margin:8px 0 4px">Numbers 0–20</h2><div class="s">Count the Blocks · Wool Shop</div></div><div class="tip" style="margin-bottom:14px">Toca ▶ para escuchar. Cuando suene el <b>beep</b>, ¡es tu turno! Usa <b>🐢 Lento</b> si va muy rápido.</div><div class="card"><div class="trk"><span class="num">🎧 10</span><div><div class="t">Pista 10</div><div class="s">Numbers 0–20 — escucha y repite</div></div></div>
+<audio controls preload="none" src="../audio/10_World2_Numbers_020_escucha_y_repite.mp3"></audio>
+<div class="speed"><button data-r="0.75">🐢 Lento</button><button data-r="1" class="on">Normal</button></div></div><div class="card"><div class="trk"><span class="num">🎧 11</span><div><div class="t">Pista 11</div><div class="s">Sound Lab: TH</div></div></div>
+<audio controls preload="none" src="../audio/11_World2_Sound_Lab_TH.mp3"></audio>
+<div class="speed"><button data-r="0.75">🐢 Lento</button><button data-r="1" class="on">Normal</button></div></div><div class="card"><div class="trk"><span class="num">🎧 12</span><div><div class="t">Pista 12</div><div class="s">Number dictation — escucha y escribe</div></div></div>
+<audio controls preload="none" src="../audio/12_World2_Number_dictation_escucha_y_escribe.mp3"></audio>
+<div class="speed"><button data-r="0.75">🐢 Lento</button><button data-r="1" class="on">Normal</button></div></div><footer>Material educativo independiente, no oficial. Minecraft es marca de Mojang / Microsoft.</footer></div></main><script>
+document.querySelectorAll('.speed').forEach(function(box){var a=box.parentNode.querySelector('audio');
+box.querySelectorAll('button').forEach(function(b){b.onclick=function(){a.playbackRate=parseFloat(b.dataset.r);
+box.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');}})});
+document.querySelectorAll('audio').forEach(function(a){a.addEventListener('play',function(){document.querySelectorAll('audio').forEach(function(o){if(o!==a)o.pause()})})});
+</script></body></html>
